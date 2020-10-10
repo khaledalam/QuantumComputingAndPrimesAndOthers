@@ -14,7 +14,7 @@ Primes:
 on classical computer:
 
 |Lower bound | Upper bound | Count primes | ~ Elapsed time | Threads | Sieve size | Options|
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+--- |--- |--- |--- |--- |--- |---
 |0 | 1               | 4             | 0.0 sec       | 1  | 4096 KiB | printing|
 |0 | 100             | 25            | 0.0 sec       | 1  | 4096 KiB | printing|
 |0 | 1000            | 168           | 0.0 sec       | 1  | 4096 KiB | printing|
