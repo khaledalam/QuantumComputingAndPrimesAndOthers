@@ -29,6 +29,7 @@ on classical computer:
 |0 | 100000000000    | 4118054813    | 48.99 sec     | 12 | 4096 KiB | -|
 |0 | 1000000000000   | 37607912018   | - sec     | 12 | 4096 KiB | -|
 
+pattern: https://oeis.org/A006880
 
 
 
