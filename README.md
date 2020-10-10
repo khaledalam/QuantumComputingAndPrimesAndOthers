@@ -1,6 +1,4 @@
-Challenge! 
-
-my random notes
+Challenges (my random notes)
 
 Author: Khaled Alam (khaledalam.net@gmail.com)
 © 2020
