@@ -1,6 +1,4 @@
-Challenge! 
-
-my random notes
+Challenges (my random notes)
 
 Author: Khaled Alam (khaledalam.net@gmail.com)
 © 2020
@@ -14,7 +12,7 @@ Primes:
 on classical computer:
 
 |Lower bound | Upper bound | Count primes | ~ Elapsed time | Threads | Sieve size | Options|
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+--- |--- |--- |--- |--- |--- |---
 |0 | 1               | 4             | 0.0 sec       | 1  | 4096 KiB | printing|
 |0 | 100             | 25            | 0.0 sec       | 1  | 4096 KiB | printing|
 |0 | 1000            | 168           | 0.0 sec       | 1  | 4096 KiB | printing|
@@ -27,8 +25,9 @@ on classical computer:
 |0 | 1000000000      | 50847534      | 0.0 sec       | 12 | 4096 KiB | -|
 |0 | 10000000000     | 455052511     | 3.06 sec      | 12 | 4096 KiB | -|
 |0 | 100000000000    | 4118054813    | 48.99 sec     | 12 | 4096 KiB | -|
-|0 | 1000000000000   | 4118054813    | 48.99 sec     | 12 | 4096 KiB | -|
+|0 | 1000000000000   | 37607912018   | - sec     | 12 | 4096 KiB | -|
 
+pattern: https://oeis.org/A006880
 
 
 
