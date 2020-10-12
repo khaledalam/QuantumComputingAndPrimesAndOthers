@@ -66,4 +66,7 @@ if __name__ == "__main__":
         process=multiprocessing.Process(None,prime_plot,args=(i*i,))
         process.start()
         process.join
-        time.sleep(.3)
+        
+        # Maximum number of clients reachedUnable to init server: Could not connect: Connection refused  
+        # (solution: increase sleep)
+        time.sleep(.3) 
