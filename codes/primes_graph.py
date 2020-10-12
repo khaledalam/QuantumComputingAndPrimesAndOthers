@@ -1,5 +1,15 @@
+# Author: Khaled Alam (khaledalam.net@gmail.com)
+# some lines from ref: stackoverflow
+
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
+
+# import threading  # Matplotlib is not thread safe
+import multiprocessing
+import time
+import random
+
 
 def all_prime(n):
     """ Returns  a list of primes < n """
@@ -18,6 +28,14 @@ def prime_plot(n):
     if N*N != n:
         raise ValueError("Need a square grid.")
 
+    font = {
+        'family' : 'Times New Roman',
+        'weight' : 'bold',
+        'size'   : 100 / N 
+    }
+
+    matplotlib.rc('font', **font)
+
     primes = np.array(all_prime(n)).astype(int)
     data = np.zeros(n)
     data[primes] = 1
@@ -29,6 +47,30 @@ def prime_plot(n):
     for p in primes:
         ax.text(p%N, p//N, p, color="w", ha="center", va="center")
 
-    plt.show()
+    plt.savefig('figure_' + str(N) + 'x' + str(N) + '.png')
+    plt.close()
 
-prime_plot(25)
+
+
+if __name__ == "__main__": 
+
+    q = multiprocessing.Queue()
+    
+    # Generate primes figures [i*i] where 2 <= i <= 100  
+    # (perform in multiprocessing style)
+
+    for i in range(2, 101):
+        
+        print("[ixi] i=" + str(i))
+        #Create and start the simulation process
+        process=multiprocessing.Process(None,prime_plot,args=(i*i,))
+        process.start()
+        process.join
+    
+    # time.sleep(1)
+
+
+    # if any(proces.is_alive() for proces in iter(q.get, None)):
+    #     print('waiting..')
+    # else:
+    #     print('All processes done')

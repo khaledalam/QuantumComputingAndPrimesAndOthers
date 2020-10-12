@@ -29,22 +29,10 @@ on classical computer:
 
 sequence: https://oeis.org/A006880
 
-<br><br>
+<br>
 Figures:
+<a href="Primes_NxN_figures.md">Primes_NxN_figures.md</a>
 
-<img src="figures/primes_2x2.png" height="250">
-<img src="figures/primes_3x3.png" height="250">
-<img src="figures/primes_4x4.png" height="250">
-<img src="figures/primes_5x5.png" height="250">
-<img src="figures/primes_6x6.png" height="250">
-<img src="figures/primes_7x7.png" height="250">
-<img src="figures/primes_8x8.png" height="250">
-<img src="figures/primes_9x9.png" height="250">
-<img src="figures/primes_10x10.png" height="250">
-<img src="figures/primes_11x11.png" height="250">
-<img src="figures/primes_12x12.png" height="250">
-<img src="figures/primes_13x13.png" height="250">
-<img src="figures/primes_14x14.png" height="250">
 -----
 
 - Quantum computing
