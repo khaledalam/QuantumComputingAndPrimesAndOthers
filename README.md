@@ -44,6 +44,7 @@ Figures:
 - GNFS
 - Quantum Fourier transform
 - Knapsack
+- Compress the 1GB file enwik9 to less than the current record of about 116MB
 
 
 
