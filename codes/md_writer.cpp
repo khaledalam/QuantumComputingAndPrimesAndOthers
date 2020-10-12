@@ -18,7 +18,7 @@ int main() {
 	for (int i = 2; i <= 100; i++)
 	{
 		// <img src="primes_figures/primes_2x2.png" height="250">
-		cout << "<img src=\"primes_figures/primes_" << i << "x" << i << ".png height=\"250\">" << endl;
+		cout << "<img src=\"primes_figures/primes_" << i << "x" << i << ".png\" height=\"250\">" << endl;
 	}
 	
 }

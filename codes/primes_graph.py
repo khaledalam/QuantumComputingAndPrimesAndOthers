@@ -47,7 +47,7 @@ def prime_plot(n):
     for p in primes:
         ax.text(p%N, p//N, p, color="w", ha="center", va="center")
 
-    plt.savefig('figure_' + str(N) + 'x' + str(N) + '.png')
+    plt.savefig('primes_' + str(N) + 'x' + str(N) + '.png')
     plt.close()
 
 
@@ -56,8 +56,7 @@ if __name__ == "__main__":
 
     q = multiprocessing.Queue()
     
-    # Generate primes figures [i*i] where 2 <= i <= 100  
-    # (perform in multiprocessing style)
+    # Generate primes figures [i*i] where 2 <= i <= 100
 
     for i in range(2, 101):
         
@@ -66,11 +65,3 @@ if __name__ == "__main__":
         process=multiprocessing.Process(None,prime_plot,args=(i*i,))
         process.start()
         process.join
-    
-    # time.sleep(1)
-
-
-    # if any(proces.is_alive() for proces in iter(q.get, None)):
-    #     print('waiting..')
-    # else:
-    #     print('All processes done')
