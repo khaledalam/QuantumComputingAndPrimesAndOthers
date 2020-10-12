@@ -51,6 +51,7 @@ def prime_plot(n):
     plt.close()
 
 
+MAX_N = 200
 
 if __name__ == "__main__": 
 
@@ -58,10 +59,11 @@ if __name__ == "__main__":
     
     # Generate primes figures [i*i] where 2 <= i <= 100
 
-    for i in range(2, 101):
+    for i in range(2, MAX_N + 1):
         
         print("[ixi] i=" + str(i))
         #Create and start the simulation process
         process=multiprocessing.Process(None,prime_plot,args=(i*i,))
         process.start()
         process.join
+        time.sleep(.3)
