@@ -27,10 +27,24 @@ on classical computer:
 |0 | 100000000000    | 4118054813    | 48.99 sec     | 12 | 4096 KiB | -|
 |0 | 1000000000000   | 37607912018   | - sec     | 12 | 4096 KiB | -|
 
-pattern: https://oeis.org/A006880
+sequence: https://oeis.org/A006880
 
+<br><br>
+Figures:
 
-
+<img src="figures/primes_2x2.png" width="300">
+<img src="figures/primes_3x3.png" width="300">
+<img src="figures/primes_4x4.png" width="300">
+<img src="figures/primes_5x5.png" width="300">
+<img src="figures/primes_6x6.png" width="300">
+<img src="figures/primes_7x7.png" width="300">
+<img src="figures/primes_8x8.png" width="300">
+<img src="figures/primes_9x9.png" width="300">
+<img src="figures/primes_10x10.png" width="300">
+<img src="figures/primes_11x11.png" width="300">
+<img src="figures/primes_12x12.png" width="300">
+<img src="figures/primes_13x13.png" width="300">
+<img src="figures/primes_14x14.png" width="300">
 -----
 
 - Quantum computing
