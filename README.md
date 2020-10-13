@@ -29,8 +29,8 @@ on classical computer:
 sequence: https://oeis.org/A006880
 
 <br>
-Figures:
-<a href="Primes_NxN_figures.md">Primes_NxN_figures.md</a>
+Primes Figures:
+<a href="primes_figures.md">primes_figures.md</a>
 
 -----
 PI:
