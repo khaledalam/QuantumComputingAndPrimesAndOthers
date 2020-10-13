@@ -28,9 +28,20 @@ on classical computer:
 
 sequence: https://oeis.org/A006880
 
-<br>
-Primes Figures:
-<a href="primes_figures.md">primes_figures.md</a>
+
+## Primes Figures:
+
+NxN:<br>
+<img src="primes_figures/nxn/primes_6x6.png" height="250">
+<img src="primes_figures/nxn/primes_7x7.png" height="250">
+
+<hr>
+
+2-1000 and 2-10000:<br>
+<img src="primes_figures/linear/primes_linear_2_1000.png" height="250">
+<img src="primes_figures/linear/primes_linear_2_10000.png" height="250">
+
+## Full => <a href="primes_figures.md">primes_figures.md</a>
 
 -----
 PI:
