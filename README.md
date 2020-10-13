@@ -6,7 +6,6 @@ _______________________
 
 
 
-
 Primes:
 
 on classical computer:
@@ -34,6 +33,16 @@ Figures:
 <a href="Primes_NxN_figures.md">Primes_NxN_figures.md</a>
 
 -----
+PI:
+
+PI Benchmark Multi-Threaded:  (RAM)<br>
+<img src="imgs/PI_Benchmark_Multi-Threaded.png" width="400">
+
+
+
+
+
+-----
 
 - Quantum computing
 - Primes
@@ -45,7 +54,7 @@ Figures:
 - Quantum Fourier transform
 - Knapsack
 - Compress the 1GB file enwik9 to less than the current record of about 116MB
-
+- PI
 
 
 
