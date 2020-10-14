@@ -4,9 +4,26 @@ Author: Khaled Alam (khaledalam.net@gmail.com)
 © 2020
 _______________________
 
+- Quantum computing
+- Primes
+- RSA Cryptosystem
+- Shor's Algorithm
+- Ulam spiral
+- Secure Hash Algorithms: SHA-2, SHA-256, SHA-512
+- GNFS
+- Quantum Fourier transform
+- Knapsack
+- Compress the 1GB file enwik9 to less than the current record of about 116MB
+- PI
+- Mersenne Primes
 
 
-Primes:
+
+
+------
+
+
+## Primes:
 
 on classical computer:
 
@@ -31,7 +48,7 @@ sequence: https://oeis.org/A006880
 
 ## Primes Figures:
 
-NxN:<br>
+5x5 and 6x6:<br>
 <img src="primes_figures/nxn/primes_6x6.png" height="250">
 <img src="primes_figures/nxn/primes_7x7.png" height="250">
 
@@ -41,17 +58,10 @@ NxN:<br>
 <img src="primes_figures/linear/primes_linear_2_1000.png" height="250">
 <img src="primes_figures/linear/primes_linear_2_10000.png" height="250">
 
-## Full => <a href="primes_figures.md">primes_figures.md</a>
+### Full => <a href="primes_figures.md">primes_figures.md</a>
 
 -----
-PI:
-
-PI Benchmark Multi-Threaded:  (RAM)<br>
-<img src="imgs/PI_Benchmark_Multi-Threaded.png" width="400">
-
-
------
-### Mersenne Primes:
+## Mersenne Primes:
 
 ```Author: Khaled Alam(khaledalam.net@gmail.com)
 
@@ -84,27 +94,6 @@ using namespace std;
 
 
 
-
-/*
-Output sample:
-
-Author: Khaled Alam(khaledalam.net@gmail.com)
-
-Mersenne Primes:
-(2^P)-1 |     value      | time
------------------------------------------
-(2 ^  2)-1 =       3 | Elasped time is 0.00 seconds.
-(2 ^  3)-1 =       7 | Elasped time is 0.00 seconds.
-(2 ^  5)-1 =      31 | Elasped time is 0.00 seconds.
-(2 ^  7)-1 =     127 | Elasped time is 0.00 seconds.
-(2 ^ 13)-1 =    8191 | Elasped time is 0.05 seconds.
-(2 ^ 17)-1 =  131071 | Elasped time is 1.19 seconds.
-(2 ^ 19)-1 =  524287 | Elasped time is 6.08 seconds.
-...
-
-*/
-
-
 map<BigNumber, bool> vis;
 map<BigNumber, bool> mem;
 
@@ -117,6 +106,7 @@ bool isPrime(BigNumber &N) {
 		vis[N] = true;
 		return mem[N] = false;
 	}
+
 
 	if (N <= BigNumber(3)) {
 		vis[N] = true;
@@ -188,27 +178,15 @@ int main() {
 
 -----
 
-- Quantum computing
-- Primes
-- RSA Cryptosystem
-- Shor's Algorithm
-- Ulam spiral
-- Secure Hash Algorithms: SHA-2, SHA-256, SHA-512
-- GNFS
-- Quantum Fourier transform
-- Knapsack
-- Compress the 1GB file enwik9 to less than the current record of about 116MB
-- PI
-- Mersenne Primes
-
-
-
-
-------
-
-Quantum computer:
+## Quantum computer:
 
 * Break 2048-bit RSA encryption in 8 hours
 
 
-------
+
+-----
+## PI:
+
+PI Benchmark Multi-Threaded:  (RAM)<br>
+<img src="imgs/PI_Benchmark_Multi-Threaded.png" width="400">
+
