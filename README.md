@@ -16,6 +16,7 @@ _______________________
 - Compress the 1GB file enwik9 to less than the current record of about 116MB
 - PI
 - Mersenne Primes
+- Miller-Rabin Algortihm
 
 
 
@@ -78,7 +79,6 @@ Mersenne Primes:
 ...
 ```
 
-
 ### Code: 
 <details><summary>Mersenne Primes C++ Code using BigInteger</summary><p>
 
@@ -91,8 +91,6 @@ Mersenne Primes:
 #include "BigNumberCPP/bignumber.h"
 
 using namespace std;
-
-
 
 map<BigNumber, bool> vis;
 map<BigNumber, bool> mem;
@@ -174,6 +172,38 @@ int main() {
 
 ```
 </p></details>
+
+
+<br><br>
+
+### Advanced:
+
+(Probabilistic tests, Miller-Rabin, Fermat primality test, Carmichael numbers, ...)
+
+output:
+```
+time: 0:00:00.000002,   (2^2)-1,      digits length: 1
+time: 0:00:00.000283,   (2^3)-1,      digits length: 1
+time: 0:00:00.000274,   (2^5)-1,      digits length: 2
+time: 0:00:00.000276,   (2^7)-1,      digits length: 3
+time: 0:00:00.000449,   (2^13)-1,     digits length: 4
+time: 0:00:00.000477,   (2^17)-1,     digits length: 6
+time: 0:00:00.000536,   (2^19)-1,     digits length: 6
+time: 0:00:00.001249,   (2^31)-1,     digits length: 10
+time: 0:00:00.002967,   (2^61)-1,     digits length: 19
+time: 0:00:00.004160,   (2^89)-1,     digits length: 27
+time: 0:00:00.005148,   (2^107)-1,    digits length: 33
+time: 0:00:00.006455,   (2^127)-1,    digits length: 39
+time: 0:00:00.072748,   (2^521)-1,    digits length: 157
+time: 0:00:00.107656,   (2^607)-1,    digits length: 183
+time: 0:00:01.026329,   (2^1279)-1,   digits length: 386
+time: 0:00:03.711185,   (2^2203)-1,   digits length: 664
+time: 0:00:03.835759,   (2^2281)-1,   digits length: 687
+time: 0:00:10.750292,   (2^3217)-1,   digits length: 969
+time: 0:00:22.843608,   (2^4253)-1,   digits length: 1281
+time: 0:00:25.689716,   (2^4423)-1,   digits length: 1332
+...
+```
 
 
 -----
