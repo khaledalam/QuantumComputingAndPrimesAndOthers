@@ -10,19 +10,108 @@ _______________________
 - Shor's Algorithm
 - Ulam spiral
 - Secure Hash Algorithms: SHA-2, SHA-256, SHA-512
+- Bernstein–Vazirani algorithm
 - GNFS
 - Quantum Fourier transform
 - Knapsack
 - Compress the 1GB file enwik9 to less than the current record of about 116MB
 - PI
 - Mersenne Primes
-- Miller-Rabin Algortihm
+- Miller-Rabin algortihm
+
+
+-----
+
+## Quantum Computing:
+
+* Break 2048-bit RSA encryption in 8 hours
+
+* Guess binary string (secret) of length N in 1 shot only using quantum computing circuit!
+
+```
+~ by using clasical computers we need at least 6 shots to guess binary string (secret) of length N
+
+~ by using quantum computer we need 1 shot to guess binary string (secret) of ANY length ( cool isn't it! ^^ )
+```
+
+### Code: 
+<details><summary>Qiskit design circuit</summary><p>
+
+```python
+# Author: Khaled Alam(khaledalam.net@gmail.com)
+
+'''
+    Guess binary string (secret) of length N in 1 shot only using quantum computing circuit!
+
+    ~ by using clasical computers we need at least 6 shots to guess string (secret) of length N
+
+    ~ by using quantum computer we need 1 shot to guess string (secret) of ANY length ( cool isn't it! ^^ )
+
+'''
+
+
+secret = '01000001' # `01000001` = `A`
+
+from qiskit import *
+
+n = len(secret) 
+
+qCircuit = QuantumCircuit(n+1, n) # n+1 qubits and n classical bits
+
+qCircuit.x(n)
+
+qCircuit.barrier()
+
+qCircuit.h(range(n+1))
+
+qCircuit.barrier() 
+
+for ii, OZ in enumerate(reversed(secret)):
+    if OZ == '1': 
+        qCircuit.cx(ii, n)
+    
+qCircuit.barrier()
+
+
+qCircuit.h(range(n+1))
+
+qCircuit.barrier()
+
+qCircuit.measure(range(n), range(n))
+
+%matplotlib inline
+qCircuit.draw(output='mpl')
+
+```
+</p></details>
+
+
+circuit:<br>
+<img src="imgs/circuit.png" width="500">
+<br>
+
+
+### Code: 
+<details><summary>Qiskit run on simulator</summary><p>
+
+```python
+# run on simulator
+simulator = Aer.get_backend('qasm_simulator')
+result = execute(qCircuit, backend=simulator, shots=1).result() # only 1 shot
+from qiskit.visualization import plot_histogram
+plot_histogram(
+    result.get_counts(qCircuit)
+)
+```
+</p></details>
+
+<img src="imgs/circuit_probabilities.png" width="500">
 
 
 
+<br><br>
 
-------
-
+<hr>
 
 ## Primes:
 
@@ -204,13 +293,6 @@ time: 0:00:22.843608,   (2^4253)-1,   digits length: 1281
 time: 0:00:25.689716,   (2^4423)-1,   digits length: 1332
 ...
 ```
-
-
------
-
-## Quantum computer:
-
-* Break 2048-bit RSA encryption in 8 hours
 
 
 
