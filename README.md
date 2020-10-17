@@ -6,17 +6,17 @@ _______________________
 
 - Quantum computing
 - Primes
-- RSA Cryptosystem
-- Shor's Algorithm
+- RSA cryptosystem
+- Shor's algorithm
 - Ulam spiral
-- Secure Hash Algorithms: SHA-2, SHA-256, SHA-512
+- Secure Hash algorithms: SHA-2, SHA-256, SHA-512
 - Bernstein–Vazirani algorithm
 - GNFS
 - Quantum Fourier transform
 - Knapsack
 - Compress the 1GB file enwik9 to less than the current record of about 116MB
 - PI
-- Mersenne Primes
+- Mersenne primes
 - Miller-Rabin algortihm
 
 
@@ -26,12 +26,12 @@ _______________________
 
 * Break 2048-bit RSA encryption in 8 hours
 
-* Guess binary string (secret) of length N in 1 shot only using quantum computing circuit!
+* Guess binary string (secret) of length N in 1 shot only using quantum circuit!
 
 ```
 ~ by using clasical computers we need at least 6 shots to guess binary string (secret) of length N
 
-~ by using quantum computer we need 1 shot to guess binary string (secret) of ANY length ( cool isn't it! ^^ )
+~ by using quantum computer we need 1 shot to guess binary string (secret) of ANY length
 ```
 
 ### Code: 
@@ -86,7 +86,7 @@ qCircuit.draw(output='mpl')
 </p></details>
 
 
-circuit:<br>
+Quantum circuit of (`A` <=> `01000001`)<br>
 <img src="imgs/circuit.png" width="500">
 <br>
 
