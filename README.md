@@ -29,13 +29,12 @@ _______________________
 * Guess binary string (secret) of length N in 1 shot only using quantum circuit!
 
 ```
-~ by using clasical computers we need at least 6 shots to guess binary string (secret) of length N
-
+~ by using clasical computers we need at least N shots to guess binary string (secret) of length N
 ~ by using quantum computer we need 1 shot to guess binary string (secret) of ANY length
 ```
 
 ### Code: 
-<details><summary>Qiskit design circuit</summary><p>
+<details><summary>designing quantum circuit</summary><p>
 
 ```python
 # Author: Khaled Alam(khaledalam.net@gmail.com)
@@ -43,7 +42,7 @@ _______________________
 '''
     Guess binary string (secret) of length N in 1 shot only using quantum computing circuit!
 
-    ~ by using clasical computers we need at least 6 shots to guess string (secret) of length N
+    ~ by using clasical computers we need at least N shots to guess string (secret) of length N
 
     ~ by using quantum computer we need 1 shot to guess string (secret) of ANY length ( cool isn't it! ^^ )
 
