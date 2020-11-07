@@ -89,9 +89,7 @@ Quantum circuit of (`A` <=> `01000001`)<br>
 <img src="imgs/circuit.png" width="500">
 <br>
 
-
-### Code: 
-<details><summary>Qiskit run on simulator</summary><p>
+<details><summary>run on simulator</summary><p>
 
 ```python
 # run on simulator
@@ -133,6 +131,22 @@ on classical computer:
 |0 | 1000000000000   | 37607912018   | - sec     | 12 | 4096 KiB | -|
 
 sequence: https://oeis.org/A006880
+
+
+## Primes:
+
+pows:
+
+Number  |  Last digits that repeat in cycle
+  1     |  1
+  2     |  4, 8, 6, 2
+  3     |  9, 7, 1, 3
+  4     |  6, 4
+  5     |  5
+  6     |  6
+  7     |  9, 3, 1, 7
+  8     |  4, 2, 6, 8
+  9     |  1, 9
 
 
 ## Primes Figures:
