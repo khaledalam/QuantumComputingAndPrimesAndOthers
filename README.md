@@ -105,6 +105,38 @@ plot_histogram(
 <img src="imgs/circuit_probabilities.png" width="500">
 
 
+<br><br>
+
+<hr>
+
+## Math notes:
+
+### Bases and Exponents
+
+If:  A ^ B = C<br>
+Then: B = log(C) / log(A)
+
+```python
+c = 1024
+a = 2
+b = int((math.log(c, 10) / math.log(a, 10)))
+if(a**b == c):
+   print(str(a) + "^" + str(b) + " = " + str(c))
+   # output: 2^10 = 1024
+```
+
+
+If A ^ B = C<br>
+Then: (A ^ X) * (A ^ Y) = C where (X + Y) = B
+
+
+```python
+print(2**10) # output:  1024
+print(2**7 * 2**3) # output: 1024  (7+3 = 10)
+```
+
+
+
 
 <br><br>
 
@@ -133,33 +165,37 @@ on classical computer:
 sequence: https://oeis.org/A006880
 
 
-## Primes:
+<br><br>
 
-pows:
+### pows ast digits that repeat in cycle:
 
-Number  |  Last digits that repeat in cycle
-  1     |  1
-  2     |  4, 8, 6, 2
-  3     |  9, 7, 1, 3
-  4     |  6, 4
-  5     |  5
-  6     |  6
-  7     |  9, 3, 1, 7
-  8     |  4, 2, 6, 8
-  9     |  1, 9
+|Number  |  Last digits that repeat in cycle|
+--- |---
+|  1     |  1|
+|  2     |  4, 8, 6, 2|
+|  3     |  9, 7, 1, 3|
+|  4     |  6, 4|
+|  5     |  5|
+|  6     |  6|
+|  7     |  9, 3, 1, 7|
+|  8     |  4, 2, 6, 8|
+|  9     |  1, 9|
 
+<br><br><br>
 
 ## Primes Figures:
 
-5x5 and 6x6:<br>
-<img src="primes_figures/nxn/primes_6x6.png" height="250">
-<img src="primes_figures/nxn/primes_7x7.png" height="250">
+6x6, 7x7, 8x8, ...:<br>
+<img src="primes_figures/nxn/primes_6x6.png" height="200">
+<img src="primes_figures/nxn/primes_7x7.png" height="200">
+<img src="primes_figures/nxn/primes_8x8.png" height="200">
 
 <hr>
 
-2-1000 and 2-10000:<br>
-<img src="primes_figures/linear/primes_linear_2_1000.png" height="250">
-<img src="primes_figures/linear/primes_linear_2_10000.png" height="250">
+2-1000, 2-10000, 2-100000:<br>
+<img src="primes_figures/linear/primes_linear_2_1000.png" height="200">
+<img src="primes_figures/linear/primes_linear_2_10000.png" height="200">
+<img src="primes_figures/linear/primes_linear_2_100000.png" height="200">
 
 ### Full => <a href="primes_figures.md">primes_figures.md</a>
 
